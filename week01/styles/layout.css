@@ -1,59 +1,69 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-body {
-  font-family: Arial, sans-serif;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-}
+  body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 50px 1fr auto; /* Encabezado, menú, contenido y pie de página */
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "footer";
+  }
 
-header,
-footer {
-  background-color: #3a3a3b;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-}
+  header {
+    background-color: #3a3a3b;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    grid-area: header;
+  }
 
-nav {
-  background-color: black;
-  padding: 1rem;
-  display: flex;
-  justify-content: space-around;
-  text-transform: uppercase;
-}
+  nav {
+    background-color: black;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+    grid-area: nav;
+  }
 
-nav a {
-  color: white;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-}
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+  }
 
-main {
-  flex: 1;
-  display: flex;
-  background-color: #ccc;
-}
+  main {
+    display: grid;
+    grid-template-columns: 1fr 250px; /* Una columna para el contenido principal y otra para el aside */
+    grid-template-areas: "article aside";
+    grid-area: main;
+    background-color: #ccc;
+  }
 
-article {
-  flex: 1;
-  background-color: #d3d3d3;
-  padding: 2rem;
-}
+  article {
+    padding: 2rem;
+    background-color: #d3d3d3;
+    grid-area: article;
+  }
 
-aside {
-  background-color: white;
-  padding: 2rem;
-  flex: 0 0 250px;
-}
+  aside {
+    padding: 2rem;
+    background-color: white;
+    grid-area: aside;
+  }
 
-footer {
-  background-color: #3a3a3b;
-  text-align: center;
-  padding: 1rem;
-  color: white;
-}
+  footer {
+    background-color: #3a3a3b;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+    grid-area: footer;
+  }
