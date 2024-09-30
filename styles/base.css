@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Freckle+Face&family=Poetsen+One&display=swap');
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -10,6 +12,7 @@ header {
     color: #ecf0f1;
     padding: 1em;
     text-align: center;
+    font-family: 'Poetsen One', sans-serif;
 }
 
 nav ul {
@@ -48,6 +51,8 @@ main p {
     background-color: #ecf0f1;
     padding: 20px;
     border-radius: 8px;
+    font-family: 'Freckle Face', cursive;
+    font-size: 1.5rem;
 }
 
 .card img {
