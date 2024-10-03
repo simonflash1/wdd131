@@ -1,0 +1,12 @@
+@media (min-width: 500px) {
+    #menu {
+        display: none;
+    }
+    .navigation {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .navigation a {
+        display: block;
+    }
+}
