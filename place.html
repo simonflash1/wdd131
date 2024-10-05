@@ -6,8 +6,67 @@
     <title>Place Page</title>
     <link rel="stylesheet" href="styles/place.css">
     <script src="scripts/place.js" defer></script>
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="icon" href="images/weather.svg">
 </head>
 <body>
-    
+    <header>
+        <h1>Argentina</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <img src="images/obelisco.webp" alt="Buenos Aires" width="490">
+            </picture>
+        </div>
+        <div class="data" id="data">
+            <h2>Data</h2>
+            <p><strong>Country: </strong></p>
+            <p>Argentina</p>
+            <p><strong>Area: </strong></p>
+            <p>2,736,690 km²</p>
+            <p><strong>Population: </strong></p>
+            <p>45,696,159</p>
+            <p><strong>Capital: </strong></p>
+            <p>Buenos Aires</p>
+            <p><strong>Official Language: </strong></p>
+            <p>Spanish</p>
+            <p><strong>Currency: </strong></p>
+            <p>Argentine Peso</p>
+            <p><strong>Government: </strong></p>
+            <p>Federal Presidential Constitutional Republic</p>
+            <p><strong>President: </strong></p>
+            <p>Javier Milei</p>
+            <p><strong>Time Zone: </strong></p>
+            <p>UTC-3</p>
+            <p><strong>Calling Code: </strong></p>
+            <p>+54</p>
+            <p><strong>Internet TLD: </strong></p>
+            <p>.ar</p>
+        </div>
+        <hr>
+        <div class="data" id="weather">
+            <h2>Weather</h2>
+            <img src="images/weather.svg" alt="Weather" width="560">
+
+            <p><strong>Temperature: </strong></p>
+            <p><span id="temp">26</span>°C</p>
+            <p><strong>Condition: </strong></p>
+            <p>Sunny</p>
+            <p><strong>Humidity: </strong></p>
+            <p><span id="humidity">60</span>%</p>
+            <p><strong>Wind Speed: </strong></p>
+            <p><span id="windSpeed">20</span> km/h</p>
+            <p><strong>Wind Chill: </strong></p>
+            <p><span id="windChill"></span></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Emmanuel Lizarraga - Tucuman -
+            Argentina
+          </p>
+          <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
