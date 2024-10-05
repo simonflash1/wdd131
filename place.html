@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Place Page</title>
+    <meta name="description" content="This is a page about weather in Argentina">
+    <meta name="author" content="Emmanuel Lizarraga">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AR:wght@100..400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/place.css">
     <script src="scripts/place.js" defer></script>
     <link rel="stylesheet" href="styles/place-large.css">
@@ -16,7 +22,9 @@
     <main>
         <div class="hero">
             <picture>
-                <img src="images/obelisco.webp" alt="Buenos Aires" width="490">
+                <source srcset="images/puente-mujer.webp" media="(max-width: 700px)">
+                <source srcset="images/obelisco.webp" media="(max-width: 700px)">
+                <img src="images/obelisco.webp" alt="Buenos Aires">
             </picture>
         </div>
         <div class="data" id="data">

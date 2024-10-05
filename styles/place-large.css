@@ -1,4 +1,4 @@
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 700px) {
     #weather h2:first-child::after{
         content: "☼";
     }
@@ -21,6 +21,7 @@
         margin-left: -2rem;
         margin-top: 1rem;
         margin-bottom: 1rem;
+        font-family: "Roboto", serif;
     }
 
     #data {

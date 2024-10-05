@@ -1,7 +1,7 @@
 * {
     margin: auto;
     text-align: center;
-    font-family: "Vollkorn", serif;
+    font-family: "Roboto", serif;
 }
 
 :root {
@@ -27,7 +27,7 @@ hr {
 
 h1 {
     color: white;
-    font-size: 3rem;
+    font-family: "Playwrite AR", serif;
 }
 
 
@@ -37,11 +37,11 @@ h1 {
     max-width: 36rem;
     min-width: 18rem;
     padding: 0rem 1rem 1rem 0rem;
-    /* font-size: 1.2rem; */
 }
 
 h2 {
     font-size: 1.8rem;
+    font-family: "Playwrite AR", serif;
 }
 
 
