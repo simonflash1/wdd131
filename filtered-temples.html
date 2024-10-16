@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temple Album</title>
+    <link rel="stylesheet" href="styles/filtered-temples.css" />
+    <script src="scripts/filtered-temples.js" defer></script>
+    <meta
+      name="description"
+      content="Temples page for Emmanuel's WDD 131 class."
+    />
+    <meta name="author" content="Emmanuel Lizarraga" />
+  </head>
+  <body>
+    <header>
+      <h1>Temples</h1>
+      <button id="menu">Menu</button>
+      <nav class="navigation">
+        <a id="home-filter" href="#">Home</a>
+        <a id="old-filter" href="#">Old</a>
+        <a id="new-filter" href="#">New</a>
+        <a id="large-filter" href="#">Large</a>
+        <a id="small-filter" href="#">Small</a>
+      </nav>
+    </header>
+    <main>
+      <h2>Home</h2>
+      <div id="temple-container" class="gallery"></div> 
+    </main>
+    <footer>
+      <p>
+        &copy; <span id="currentyear"></span> Emmanuel Lizarraga - Tucuman -
+        Argentina
+      </p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>
