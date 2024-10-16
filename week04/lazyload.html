@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lazy Loading</title>
+        <meta name="author" content="Emmanuel Lizarraga">
+        <meta name="description" content="A page demonstrating lazy loading with several images">
+        <link rel="stylesheet" href="styles/lazyload.css">
+        <script defer src="script/lazyload.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Lazy Loading</h1>
+        </header>
+        <main>
+            <div class="temple">
+                <img src="../images/temple.jpg" alt="Salta Temple" loading="lazy">
+                <img src="https://www.churchofjesuschrist.org/imgs/4dfe3445d97a1c43634c0600ae017e3475057ff7/full/1600%2C/0/default" alt="Santiago Temple" loading="lazy">
+                <img src="https://www.churchofjesuschrist.org/imgs/10ce6272302d3d7705fddceae21cf92846022eb6/full/1920%2C/0/default" alt="Cordoba Temple" loading="lazy">
+                <img src="https://www.churchofjesuschrist.org/imgs/396dd44dcb8c55b10150bae7f3916389465acc0d/full/1920%2C/0/default" alt="Buenos Aires Temple" loading="lazy">
+                <img src="https://www.churchofjesuschrist.org/imgs/df8c28a226486483f0c41cc98efd4f4091af1394/full/1920%2C/0/default" alt="Sidney Temple" loading="lazy">
+                <img src="https://www.churchofjesuschrist.org/imgs/c5d27d196f7b58ce3267af61a746073ec7e94ac2/full/1920%2C/0/default" alt="Hamilton Temple" loading="lazy">
+            </div>
+        </main>
+        <footer>
+            &copy; <span id="currentyear"></span> Emmanuel Lizarraga - Tucuman - Argentina
+            <p id="lastModified"></p>
+        </footer>
+    </body>
+</html>
