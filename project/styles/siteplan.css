@@ -1,0 +1,97 @@
+body {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f8fa;
+  color: #4a4a4a;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #a6d9f7;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Baloo Bhaijaan 2", cursive;
+  color: #4a4a4a;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+  color: #ff8a80;
+}
+
+h3 {
+  font-size: 1.5em;
+  color: #a88c1a;
+}
+
+main {
+  padding: 20px;
+}
+
+p {
+  margin-bottom: 15px;
+  font-size: 1.1em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border: 2px solid #a6d9f7;
+}
+
+#heading-font {
+  font-family: "Baloo Bhaijaan 2", cursive;
+  font-weight: bold;
+  color: #ff8a80;
+}
+
+#body-font {
+  font-family: "Nunito", sans-serif;
+  color: #4a4a4a;
+}
+
+.color-example1 {
+  padding: 10px;
+  color: #4a4a4a;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #a6d9f7;
+}
+
+.color-example2 {
+  padding: 10px;
+  color: #4a4a4a;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #fedd57;
+}
+
+footer {
+  background-color: #4a4a4a;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+}
+
+footer p {
+  margin: 5px 0;
+}
