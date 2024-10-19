@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <meta name="description" content="Form Activity">
+    <meta name="author" content="Nestor Emmanuel Lizarraga">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+            <label for="product">Product Name:</label>
+            <select id="product" name="product" required>
+                <option value="" disabled selected>Select a Product ...</option>
+            </select>
+            <label>Overall Rating</label>
+            <div class="stars">
+                <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar">★</label>
+                <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar">★</label>
+                <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar">★</label>
+                <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar">★</label>
+                <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar">★</label>
+            </div>
+
+            <label for="installDate">Date of Installation:</label>
+            <input type="date" id="installDate" name="installDate" required>
+
+            <label>Useful Features:</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="feature1" name="usefulFeatures" value="durabillity">
+                <label for="feature1">Durabillity</label>
+
+                <input type="checkbox" id="feature2" name="usefulFeatures" value="easeOfUse">
+                <label for="feature2">Ease of Use</label>
+
+                <input type="checkbox" id="feature3" name="usefulFeatures" value="performance">
+                <label for="feature3">Performance</label>
+
+                <input type="checkbox" id="feature4" name="usefulFeatures" value="design">
+                <label for="feature4">Design</label>
+
+                <input type="checkbox" id="feature5" name="usefulFeatures" value="energyEfficiency">
+                <label for="feature5">Energy Efficiency</label>
+
+                <label for="writtenReview">Written Review: (Optional)</label>
+                <textarea id="writtenReview" name="writtenReview" rows="4" cols="50"></textarea>
+
+                <label for="userName">Your Name: (Optional)</label>
+                <input type="text" id="userName" name="userName">
+
+                <button type="submit">Post Review</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> Emmanuel Lizarraga - Tucuman -
+            Argentina
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
