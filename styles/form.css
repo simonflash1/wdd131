@@ -115,3 +115,7 @@ button:hover {
         position: static;
     }
 }
+
+.required {
+    color: red;
+}

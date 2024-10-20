@@ -40,3 +40,26 @@ products.forEach((product) => {
   option.textContent = product.name;
   productSelect.appendChild(option);
 });
+
+
+const form = document.querySelector('form');
+
+form.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    let reviewCount = localStorage.getItem('reviewCount') || 0;
+    reviewCount = parseInt(reviewCount) + 1;
+    localStorage.setItem('reviewCount', reviewCount);
+
+    this.submit();
+});
+
+const displayReviewCount = () => {
+    const reviewCount = localStorage.getItem('reviewCount') || 0;
+    const footerElement = document.querySelector('footer');
+    const reviewCountElement = document.createElement('p');
+    reviewCountElement.textContent = `Total reviews submitted: ${reviewCount}`;
+    footerElement.appendChild(reviewCountElement);
+};
+
+displayReviewCount();
