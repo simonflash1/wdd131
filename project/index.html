@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Music for Children</title>
+    <link rel="stylesheet" href="./styles/musicforchildren.css"/>
+    <script src="./scripts/musicforchildren.js" defer></script>
+    <meta name="description" content="This is the Music for Children Page for the project in WDD131 BYUI"/>
+    <meta name="author" content="Emmanuel Lizarraga"/>
+  </head>
+  <body>
+    <header>
+      <h1>Music for Children</h1>
+      <nav>
+        <button id="menu-toggle" aria-label="Toggle menu">☰</button>
+        <ul id="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Songs</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="banner">
+        <img src="./images/banner.jpg" alt="banner">
+      </div>
+
+      <div id="content">
+      </div>
+
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required autocomplete="off"/>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required autocomplete="off"/>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; <span id="currentyear"></span> Music for Children - Tucuman -
+        Argentina
+      </p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>
